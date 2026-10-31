@@ -1,15 +1,3 @@
---[[
-    ====================================================================================================
-    WW3 SUPREME COMMAND HUD (ww3.lua) - DEFINITIVE ALL-IN-ONE SYSTEM [MODULARIZED V2]
-    ====================================================================================================
-    PERBAIKAN:
-    - Mengatasi error "Out of local registers when trying to allocate ... exceeded limit 200"
-    - Arsitektur modular per-tab dengan builder functions & table encapsulation.
-    - Top-level register count aman (< 35 locals), mematuhi limit Luau 200 register.
-    ====================================================================================================
-]]
-
--- Pastikan Game & Player Selesai Dimuat Sebelum Eksekusi (Mencegah Bug Autoexecute)
 if not game:IsLoaded() then
     game.Loaded:Wait()
 end
